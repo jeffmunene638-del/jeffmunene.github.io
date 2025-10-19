@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jeff Munene Services</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX'); /* Replace with your real GA ID */
+  </script>
+</head>
+
+<body>
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="navbar">
+      <div class="logo-circle">JM</div>
+      <div>
+        <h1>Jeff Munene Services</h1>
+        <p>Reliable administrative and data management support</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== About Section ===== -->
+  <section class="about reveal">
+    <h2>About</h2>
+    <p>
+      Welcome to Jeff Munene Services — offering professional support in
+      bookkeeping, office administration, data entry, and report preparation.
+      My focus is on accuracy, organization, and efficiency to help businesses
+      stay on track and achieve their goals.
+    </p>
+  </section>
+
+  <!-- ===== Skills Section ===== -->
+  <section class="skills reveal">
+    <h2>Skills & Experience</h2>
+    <ul>
+      <li>Bookkeeping and financial record management</li>
+      <li>Office administration and correspondence</li>
+      <li>Data entry and report preparation</li>
+      <li>Proficient in Microsoft Office and Google Workspace</li>
+      <li>Customer service and communication</li>
+    </ul>
+  </section>
+
+  <!-- ===== Contact Section ===== -->
+  <section class="contact reveal">
+    <h2>Contact</h2>
+    <form action="thankyou.html" method="get">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 Jeff Munene Services. All rights reserved.</p>
+  </footer>
+
+  <!-- ===== Scroll Reveal Animation Script ===== -->
+  <script>
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+      for (let i = 0; i < reveals.length; i++) {
+        const windowHeight = window.innerHeight;
+        const elementTop = reveals[i].getBoundingClientRect().top;
+        const revealPoint = 100;
+
+        if (elementTop < windowHeight - revealPoint) {
+          reveals[i].classList.add("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    revealOnScroll(); // Trigger on page load
+  </script>
+</body>
+</html>

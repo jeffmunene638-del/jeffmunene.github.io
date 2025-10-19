@@ -1,0 +1,7 @@
+﻿root/
+├─ index.html
+├─ thankyou.html
+├─ css/
+│   └─ style.css
+├─ images/
+│   └─ background.jpg
